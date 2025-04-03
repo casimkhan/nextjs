@@ -3,9 +3,8 @@ services:
   name: next-js
   runtime: node
   plan: free
-  buildCommand: yarn && yarn add -D tailwindcss postcss autoprefixer && yarn tailwindcss init -p && yarn build
+  buildCommand: yarn && yarn add -D tailwindcss postcss autoprefixer && yarn build
   startCommand: yarn start
-  autoDeploy: false
   envVars:
   - key: NODE_ENV
     value: production
@@ -13,7 +12,7 @@ services:
 # - type: web
 #   name: nextjs-static
 #   runtime: static
-#   buildCommand: yarn && yarn add -D tailwindcss postcss autoprefixer && yarn tailwindcss init -p && yarn build
+#   buildCommand: yarn; yarn build
 #   staticPublishPath: out
 #   pullRequestPreviewsEnabled: true     # optional
 #   envVars:
