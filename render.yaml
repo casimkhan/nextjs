@@ -2,7 +2,7 @@ services:
 - type: web
   name: next-js
   runtime: node
-  plan: starter
+  plan: free
   buildCommand: yarn && yarn add -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && yarn build
   startCommand: yarn start
   autoDeploy: false
